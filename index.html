@@ -1206,6 +1206,172 @@
       background: var(--brown)
     }
 
+    /* HOBI & KEGIATAN */
+    .hobi {
+      background: var(--bg3);
+      position: relative;
+      overflow: hidden
+    }
+
+    .hobi::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: -120px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(176, 125, 82, .08) 0%, transparent 70%);
+      pointer-events: none
+    }
+
+    .hobi-inner {
+      position: relative;
+      z-index: 1
+    }
+
+    .hobi-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 4rem;
+      align-items: start
+    }
+
+    .hobi-block-lbl {
+      font-size: .65rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--brown-dark);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem
+    }
+
+    .hobi-block-lbl::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--line2)
+    }
+
+    /* Lagi Diasah - badge style */
+    .asah-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0
+    }
+
+    .asah-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .85rem 0;
+      border-bottom: 1px solid var(--line2)
+    }
+
+    .asah-item:last-child {
+      border-bottom: none
+    }
+
+    .asah-left {
+      display: flex;
+      align-items: center;
+      gap: .7rem
+    }
+
+    .asah-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brown);
+      flex-shrink: 0
+    }
+
+    .asah-name {
+      font-size: .87rem;
+      font-weight: 500;
+      color: var(--ink)
+    }
+
+    .asah-note {
+      font-size: .65rem;
+      letter-spacing: .04em;
+      color: var(--brown-dark);
+      background: var(--brown-light);
+      border: 1px solid var(--brown3);
+      padding: .22rem .65rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0
+    }
+
+    /* Waktu Senggang - icon row style */
+    .senggang-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0
+    }
+
+    .senggang-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .95rem 0;
+      border-bottom: 1px solid var(--line2)
+    }
+
+    .senggang-item:last-child {
+      border-bottom: none
+    }
+
+    .senggang-ic {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 1px solid var(--line2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--brown)
+    }
+
+    .senggang-ic svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.6
+    }
+
+    .senggang-txt-title {
+      font-size: .85rem;
+      font-weight: 500;
+      color: var(--ink)
+    }
+
+    .senggang-txt-sub {
+      font-size: .73rem;
+      color: var(--ink3);
+      margin-top: .1rem
+    }
+
+    .hobi-foot {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line2);
+      font-size: .82rem;
+      color: var(--ink2);
+      line-height: 1.9;
+      font-weight: 300;
+      font-style: italic;
+      max-width: 620px
+    }
+
     /* CONTACT */
     .contact {
       background: var(--bg3);
@@ -1302,6 +1468,11 @@
     .c-link.wa:hover {
       border-color: #25d366;
       color: #25d366
+    }
+
+    .c-link.li:hover {
+      border-color: #0a66c2;
+      color: #0a66c2
     }
 
     footer {
@@ -1626,6 +1797,11 @@
         gap: .5rem
       }
 
+      .hobi-row {
+        grid-template-columns: 1fr;
+        gap: 3rem
+      }
+
       .contact {
         padding: 4rem 1.5rem
       }
@@ -1736,6 +1912,7 @@
       <li><a href="#proyek">Proyek</a></li>
       <li><a href="#sertifikat">Sertifikat</a></li>
       <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#hobi">Hobi</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
   </nav>
@@ -1789,7 +1966,7 @@
           aku percaya produk yang bagus lahir dari empati yang beneran.</p>
         <div class="hero-actions">
           <a href="#proyek" class="btn btn-fill">Lihat Proyek</a>
-          <a href="https://drive.google.com/file/d/1iRbYKkAIEGEdcl_VXrJvYR8u1EjTwVlQ/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1Vr-FU_baPshu8z_VXLkT1__5EuJHAvZq/view?usp=sharing"
             class="btn btn-line" target="_blank">Lihat CV</a>
         </div>
       </div>
@@ -1798,7 +1975,7 @@
           <div class="photo-deco"></div>
           <div class="photo-deco2"></div>
           <div class="photo-frame">
-            <img src="aku.jpeg" alt="Isma Tiara Zalianti" />
+            <img src="aku-lagi.jpeg" alt="Isma Tiara Zalianti" />
             <div class="photo-tag">✦ Open to Work</div>
           </div>
         </div>
@@ -1814,9 +1991,9 @@
             <div class="stat-detail">RA Cilebak · SDN Cangkuang 05 · MTs Nurul Iman · SMK Assalaam</div>
           </div>
           <div class="stat-b" onclick="toggleStat(this)">
-            <div class="stat-n">3</div>
+            <div class="stat-n">2</div>
             <div class="stat-l">Tahun Organisasi <span class="stat-arr">›</span></div>
-            <div class="stat-detail">2023–2026 · Ketua Bidang Lingkes OSIS SMK Assalaam</div>
+            <div class="stat-detail">Jul 2023–Aug 2025 · Ketua Divisi Lingkungan Kesehatan OSIS SMK Assalaam</div>
           </div>
           <div class="stat-b" onclick="toggleStat(this)">
             <div class="stat-n">∞</div>
@@ -1829,11 +2006,12 @@
 
     <div class="mq-wrap">
       <div class="mq-inner">
-        <s>Frontend Dev</s><s class="g">✦</s><s>UI/UX Design</s><s class="g">✦</s><s>PHP &amp; SQL</s><s
-          class="g">✦</s><s>Komunikasi Tim</s><s class="g">✦</s><s>Figma</s><s class="g">✦</s><s>Open to Work</s><s
-          class="g">✦</s><s>Bandung</s><s class="g">✦</s><s>Frontend Dev</s><s class="g">✦</s><s>UI/UX Design</s><s
-          class="g">✦</s><s>PHP &amp; SQL</s><s class="g">✦</s><s>Komunikasi Tim</s><s class="g">✦</s><s>Figma</s><s
-          class="g">✦</s><s>Open to Work</s><s class="g">✦</s><s>Bandung</s><s class="g">✦</s>
+        <s>Frontend Dev</s><s class="g">✦</s><s>JavaScript</s><s class="g">✦</s><s>PHP &amp; Laravel</s><s
+          class="g">✦</s><s>UI/UX Design</s><s class="g">✦</s><s>Komunikasi Tim</s><s class="g">✦</s><s>Figma</s><s
+          class="g">✦</s><s>Open to Work</s><s class="g">✦</s><s>Bandung</s><s class="g">✦</s><s>Frontend Dev</s><s
+          class="g">✦</s><s>JavaScript</s><s class="g">✦</s><s>PHP &amp; Laravel</s><s class="g">✦</s><s>UI/UX
+          Design</s><s class="g">✦</s><s>Komunikasi Tim</s><s class="g">✦</s><s>Figma</s><s class="g">✦</s><s>Open to
+          Work</s><s class="g">✦</s><s>Bandung</s><s class="g">✦</s>
       </div>
     </div>
 
@@ -1845,9 +2023,9 @@
           <p>Halo! Aku <strong>Isma Tiara Zalianti</strong>, fresh graduate SMK Assalaam Bandung jurusan Rekayasa
             Perangkat Lunak. Buat aku, teknologi yang beneran bagus itu yang bisa dipakai orang tanpa perlu baca manual
             dulu.</p>
-          <p>Sempat jadi <strong>Ketua Bidang Lingkungan Kesehatan di OSIS</strong>, yang ngajarin aku banyak soal
-            koordinasi dan komunikasi. Terus PKL di <strong>PTIPD UIN Sunan Gunung Djati Bandung</strong>, ikut develop
-            aplikasi SISLAB dari nol sampai jalan.</p>
+          <p>Sempat jadi <strong>Ketua Divisi Lingkungan Kesehatan di OSIS</strong>, yang ngajarin aku banyak soal
+            koordinasi dan komunikasi. Terus PKL sebagai <strong>Technical Support di PTIPD UIN Sunan Gunung Djati
+              Bandung</strong>, ikut develop aplikasi SISLAB dari nol sampai jalan.</p>
           <p>Sekarang lagi fokus ningkatin skill di <strong>frontend development</strong> dan <strong>UI/UX
               design</strong> — pengen bikin antarmuka yang responsif, enak dipandang, dan beneran membantu penggunanya.
           </p>
@@ -1894,36 +2072,41 @@
         <div class="skill-col">
           <div class="skill-col-title">Pengembangan</div>
           <ul class="skill-list">
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li class="learn">JavaScript</li>
             <li>PHP</li>
-            <li>Database SQL</li>
+            <li>Laravel</li>
+            <li>Database MySQL</li>
+            <li>Git &amp; GitHub</li>
             <li class="learn">Flutter</li>
           </ul>
         </div>
         <div class="skill-col">
           <div class="skill-col-title">Desain</div>
           <ul class="skill-list">
-            <li class="learn">Editing Video</li>
-            <li class="learn">UI/UX Design</li>
-            <li class="learn">Figma</li>
+            <li class="learn">UI/UX Design (Figma)</li>
+            <li>Canva</li>
+            <li class="learn">Video &amp; Photo Editing</li>
           </ul>
         </div>
         <div class="skill-col">
-          <div class="skill-col-title">Tools</div>
+          <div class="skill-col-title">Administrasi &amp; Tools</div>
           <ul class="skill-list">
-            <li class="learn">Microsoft Office</li>
-            <li>Monitoring Komputer</li>
-            <li class="learn">Google Workspace</li>
+            <li>Microsoft Office</li>
+            <li>Google Workspace</li>
+            <li class="learn">Data Entry &amp; Manajemen Arsip</li>
+            <li class="learn">Technical Support &amp; Troubleshooting</li>
           </ul>
         </div>
         <div class="skill-col">
           <div class="skill-col-title">Soft Skills</div>
           <ul class="skill-list">
-            <li>Komunikasi Tim</li>
-            <li>Koordinasi Acara</li>
-            <li>Empati &amp; Kepekaan</li>
-            <li>Fast Learner</li>
+            <li>Komunikasi</li>
+            <li>Kerja Sama Tim</li>
+            <li>Problem Solving</li>
+            <li>Manajemen Waktu</li>
+            <li>Kemampuan Adaptasi</li>
           </ul>
         </div>
       </div>
@@ -1942,11 +2125,13 @@
       <div class="proj-grid">
         <div class="proj wide proj-accent" onclick="bukaGaleri(0)">
           <div class="proj-num">01</div>
-          <div class="proj-tag">Aplikasi Kesehatan · Featured</div>
+          <div class="proj-tag">Aplikasi Kesehatan · Proyek UKK</div>
           <div class="proj-name">Healtack</div>
           <p class="proj-desc">Aplikasi kesehatan terinspirasi dari Halodoc — ada catatan medis pribadi, pengingat minum
-            obat, sampai fitur beli obat online. Proyek ini yang paling aku banggain karena nyentuh banyak aspek:
-            backend, database, sama flow user yang lumayan kompleks.</p>
+            obat, sampai fitur beli obat online. Dikembangkan sebagai proyek Uji Kompetensi Keahlian (UKK), dan
+            <strong>diuji serta dinyatakan kompeten langsung oleh praktisi industri eksternal</strong>. Proyek ini yang
+            paling aku banggain karena nyentuh banyak aspek: backend, database, sama flow user yang lumayan kompleks.
+          </p>
           <div class="proj-chips"><span class="chip">PHP</span><span class="chip">SQL</span><span class="chip">Catatan
               Medis</span><span class="chip">Reminder</span><span class="chip">E-commerce</span></div>
           <div class="proj-hint"><svg viewBox="0 0 24 24">
@@ -1979,10 +2164,11 @@
         </div>
         <div class="proj" onclick="bukaGaleri(3)">
           <div class="proj-num">04</div>
-          <div class="proj-tag">PKL · Sistem Informasi</div>
+          <div class="proj-tag">PKL · Technical Support</div>
           <div class="proj-name">SISLAB</div>
-          <p class="proj-desc">Aplikasi peminjaman dan inventaris lab untuk UIN Sunan Gunung Djati — dikembangkan pas
-            PKL di PTIPD Kampus 1 untuk bantu pengelolaan aset lab jadi lebih rapi.</p>
+          <p class="proj-desc">Aplikasi inventaris dan manajemen ruangan untuk UIN Sunan Gunung Djati — dikembangkan
+            bareng tim pas PKL sebagai Technical Support di PTIPD Kampus 1, dan <strong>berhasil meningkatkan efisiensi
+              pemantauan fasilitas kampus</strong>.</p>
           <div class="proj-chips"><span class="chip">PHP</span><span class="chip">SQL</span><span
               class="chip">Inventaris</span><span class="chip">PKL</span></div>
           <div class="proj-hint"><svg viewBox="0 0 24 24">
@@ -1998,10 +2184,10 @@
       <div class="cert-grid">
         <article class="cert-card">
           <div>
-            <h3 class="cert-name">Pengurus OSIS — Ketua Bidang Lingkungan Kesehatan</h3>
+            <h3 class="cert-name">Pengurus OSIS — Ketua Divisi Lingkungan Kesehatan</h3>
             <p class="cert-by">SMK Assalaam Bandung</p>
           </div>
-          <span class="cert-year">2023–2026</span>
+          <span class="cert-year">2023–2025</span>
           <a href="https://drive.google.com/file/d/1tnAmPU4pBOssoOMQArUCH0chVv1x-ykD/view?usp=sharing" class="cert-link"
             target="_blank" rel="noopener">Lihat Sertifikat</a>
         </article>
@@ -2040,24 +2226,26 @@
       <div class="s-title">Perjalanan aku</div>
       <div class="exp-list">
         <div class="exp-item">
-          <div class="exp-yr">2024</div>
+          <div class="exp-yr">Sep–Nov 2025</div>
           <div>
-            <div class="exp-title">Praktik Kerja Lapangan (PKL)</div>
+            <div class="exp-title">Technical Support — Praktik Kerja Lapangan (PKL)</div>
             <div class="exp-org">UIN Sunan Gunung Djati Bandung — PTIPD</div>
             <ul class="exp-pts">
-              <li>Ikut develop aplikasi SISLAB (Sistem Informasi Laboratorium)</li>
-              <li>Monitoring dan pengecekan komputer laboratorium kampus</li>
-              <li>Jadi pengawas ujian berbasis ICT</li>
-              <li>Bantu operasional layanan TI kampus</li>
-              <li>Dukung dokumentasi kegiatan dan administrasi</li>
-              <li>Bantu proses input, pengelolaan, dan pengecekan data</li>
+              <li>Terlibat aktif dalam tim pengembangan aplikasi SISLAB (sistem inventaris &amp; manajemen ruangan) yang
+                berhasil meningkatkan efisiensi pemantauan fasilitas kampus</li>
+              <li>Mengelola administrasi &amp; data entry mahasiswa secara akurat, termasuk pembuatan akun mahasiswa
+                baru</li>
+              <li>Jadi pengawas teknis ujian berbasis ICT, sekaligus monitoring dan pengecekan laboratorium komputer
+                kampus</li>
+              <li>Menyusun dokumentasi lengkap selama pelaksanaan ujian dan kegiatan divisi</li>
+              <li>Berkoordinasi dengan bagian umum kampus untuk manajemen logistik operasional divisi</li>
             </ul>
           </div>
         </div>
         <div class="exp-item">
-          <div class="exp-yr">2023–2026</div>
+          <div class="exp-yr">Jul 2023–Aug 2025</div>
           <div>
-            <div class="exp-title">Ketua Bidang Lingkungan Kesehatan (Lingkes) — OSIS</div>
+            <div class="exp-title">Ketua Divisi Lingkungan Kesehatan (Lingkes) — OSIS</div>
             <div class="exp-org">SMK Assalaam Bandung</div>
             <ul class="exp-pts">
               <li>Koordinasi kegiatan Lingkungan Kesehatan (Lingkes)</li>
@@ -2097,6 +2285,98 @@
       </div>
     </section>
 
+    <section class="hobi reveal" id="hobi">
+      <div class="hobi-inner">
+        <div class="s-eyebrow">Di Luar Layar Kode</div>
+        <div class="s-title">Apa yang lagi aku jalanin</div>
+        <div class="hobi-row">
+          <div>
+            <div class="hobi-block-lbl">Lagi Diasah</div>
+            <div class="asah-list">
+              <div class="asah-item">
+                <span class="asah-left"><span class="asah-dot"></span><span class="asah-name">UI/UX Design</span></span>
+                <span class="asah-note">baru mulai dari dasar</span>
+              </div>
+              <div class="asah-item">
+                <span class="asah-left"><span class="asah-dot"></span><span class="asah-name">Bahasa Inggris &amp;
+                    Public Speaking</span></span>
+                <span class="asah-note">latihan rutin</span>
+              </div>
+              <div class="asah-item">
+                <span class="asah-left"><span class="asah-dot"></span><span class="asah-name">Manajemen
+                    Bisnis</span></span>
+                <span class="asah-note">self-study</span>
+              </div>
+              <div class="asah-item">
+                <span class="asah-left"><span class="asah-dot"></span><span class="asah-name">Psikologi</span></span>
+                <span class="asah-note">self-study</span>
+              </div>
+              <div class="asah-item">
+                <span class="asah-left"><span class="asah-dot"></span><span class="asah-name">Dasar Marketing &amp;
+                    Admin</span></span>
+                <span class="asah-note">jadwal belajar mandiri</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="hobi-block-lbl">Waktu Senggang</div>
+            <div class="senggang-list">
+              <div class="senggang-item">
+                <span class="senggang-ic">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M23 7l-7 5 7 5V7z" />
+                    <rect x="1" y="5" width="15" height="14" rx="2" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="senggang-txt-title">Edit Video Kenangan</div>
+                  <div class="senggang-txt-sub">Nyusun & ngedit momen jadi video</div>
+                </div>
+              </div>
+              <div class="senggang-item">
+                <span class="senggang-ic">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2V3z" />
+                    <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7V3z" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="senggang-txt-title">Membaca Buku</div>
+                  <div class="senggang-txt-sub">Lagi dibiasakan jadi rutinitas</div>
+                </div>
+              </div>
+              <div class="senggang-item">
+                <span class="senggang-ic">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M2 3h20v14H2z" />
+                    <path d="M8 21h8M12 17v4" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="senggang-txt-title">Nonton Film</div>
+                  <div class="senggang-txt-sub">Cara aku unwind & cari inspirasi cerita</div>
+                </div>
+              </div>
+              <div class="senggang-item">
+                <span class="senggang-ic">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M3 2v7c0 1.66 1.34 3 3 3s3-1.34 3-3V2M6 12v10M15 2c-1.5 2-2 4-2 6 0 2.5 2 3 2 3v11" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="senggang-txt-title">Memasak</div>
+                  <div class="senggang-txt-sub">Eksperimen resep di waktu santai</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="hobi-foot">"Selain ngoding, aku juga lagi belajar bikin jadwal belajar mandiri sehari-hari — dari
+          dasar marketing, admin, sampai hal-hal yang menurutku penting buat berkembang sebagai fresh graduate: ngerti
+          orang lewat psikologi, dan ngerti bisnis lewat manajemen."</p>
+      </div>
+    </section>
+
     <section class="contact" id="kontak">
       <div class="contact-bg"><span>isma.</span></div>
       <div class="s-eyebrow">Kontak</div>
@@ -2124,15 +2404,21 @@
           </svg>
           Instagram
         </a>
+        <a href="https://www.linkedin.com/in/isma-tiara-832103405" class="c-link li" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11-.001-4.124 2.062 2.062 0 01.001 4.124zM7.119 20.452H3.555V9h3.564v11.452z" />
+          </svg>
+          LinkedIn
+        </a>
         <a href="https://github.com/Ismatyarara" class="c-link" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/username" class="c-link" target="_blank">LinkedIn</a>
-        <a href="https://drive.google.com/file/d/1iRbYKkAIEGEdcl_VXrJvYR8u1EjTwVlQ/view?usp=sharing" class="c-link"
+        <a href="https://drive.google.com/file/d/1Vr-FU_baPshu8z_VXLkT1__5EuJHAvZq/view?usp=sharing" class="c-link"
           target="_blank">Lihat CV</a>
       </div>
     </section>
 
     <footer>
-      <span class="ft-copy">© 2025 Isma Tiara Zalianti</span>
+      <span class="ft-copy">© 2026 Isma Tiara Zalianti</span>
       <span class="ft-made">Dibuat dengan HTML, CSS &amp; JS</span>
     </footer>
 
@@ -2140,10 +2426,10 @@
 
   <script>
     const PROYEK = [
-      { tag: 'Aplikasi Kesehatan · Featured', nama: 'Healtack', fotos: ['https://drive.google.com/file/d/1ScvoeQnLPeltzgUO1ruJ1ZP8EXGDbgQN/view?usp=sharing', 'https://drive.google.com/file/d/16mfd1qWMWERv9V40uxaKQ11JpSDFkYEa/view?usp=sharing', 'https://drive.google.com/file/d/1cFy3i5LTdEmXZddPOf4xrbmc6WDMzFeD/view?usp=sharing', 'https://drive.google.com/file/d/1tH2YK_pubilcq9zMPIR-yMDj584S40cH/view?usp=sharing', 'https://drive.google.com/file/d/1Eo8OCcJOKijk6vKA4paP15AbkGabBULE/view?usp=sharing', 'https://drive.google.com/file/d/1RLCQ2RBenIrzfKkh8VTHTFCKDocXssOc/view?usp=sharing', 'https://drive.google.com/file/d/1MQt-CuZYP1aBiPfpYKXsn-JyxhWQnPBg/view?usp=sharing', 'https://drive.google.com/file/d/1Wzi52_r941JpW2QrvQ0vtPoVCGwVhBpK/view?usp=sharing'] },
+      { tag: 'Aplikasi Kesehatan · Proyek UKK', nama: 'Healtack', fotos: ['https://drive.google.com/file/d/1ScvoeQnLPeltzgUO1ruJ1ZP8EXGDbgQN/view?usp=sharing', 'https://drive.google.com/file/d/16mfd1qWMWERv9V40uxaKQ11JpSDFkYEa/view?usp=sharing', 'https://drive.google.com/file/d/1cFy3i5LTdEmXZddPOf4xrbmc6WDMzFeD/view?usp=sharing', 'https://drive.google.com/file/d/1tH2YK_pubilcq9zMPIR-yMDj584S40cH/view?usp=sharing', 'https://drive.google.com/file/d/1Eo8OCcJOKijk6vKA4paP15AbkGabBULE/view?usp=sharing', 'https://drive.google.com/file/d/1RLCQ2RBenIrzfKkh8VTHTFCKDocXssOc/view?usp=sharing', 'https://drive.google.com/file/d/1MQt-CuZYP1aBiPfpYKXsn-JyxhWQnPBg/view?usp=sharing', 'https://drive.google.com/file/d/1Wzi52_r941JpW2QrvQ0vtPoVCGwVhBpK/view?usp=sharing'] },
       { tag: 'Web Design · Frontend', nama: 'Company Profile SMKN 4 Bandung', fotos: ['https://drive.google.com/file/d/1da7adZZNCNNuAR5HMFk2Edfl31eG8hK4/view?usp=sharing', 'https://drive.google.com/file/d/1ekgGdmyoFu_VHTHY0y2FAO8kZIy7OyY_/view?usp=sharing', 'https://drive.google.com/file/d/1XzFiviSPBkcc0XMdwUlPhfvZpjXIOp5M/view?usp=sharing', 'https://drive.google.com/file/d/1V5BnkTGz-QDCeY2H_9aXZtllAeQNYRVv/view?usp=sharing', 'https://drive.google.com/file/d/1zF9Fiw-GUneVqaab5GwSbQj7gGRGfpoZ/view?usp=sharing', 'https://drive.google.com/file/d/1ReC0tizzca4WIUEBuMflOI-z4hqtu_us/view?usp=sharing', 'https://drive.google.com/file/d/1zhI_dXHPsLkknJOGZvBZYNo89Wq0YYzk/view?usp=sharing', 'https://drive.google.com/file/d/1nV3RD7wM-SHIZ_ToXMygCATnMvXrtL5Z/view?usp=sharing', 'https://drive.google.com/file/d/1vdmQee90zr3GcCCnP6ouqjj5tKrUfU99/view?usp=sharing', 'https://drive.google.com/file/d/13wqit5lBLk18Vt4aKdyK_uujU3zZAE2J/view?usp=sharing', 'https://drive.google.com/file/d/1SdtKZ7JIFlAcGY9bk656VF5aXMEJD53S/view?usp=sharing'] },
       { tag: 'Produktivitas · Integrasi', nama: 'GoTugas', fotos: ['https://drive.google.com/file/d/1ZZg_taz8ND3TnD-u5v2MjpjLzghkLz79/view?usp=sharing', 'https://drive.google.com/file/d/1pq6eU0thRr65KUhTkD8_wOmQ20eTWKze/view?usp=sharing', 'https://drive.google.com/file/d/17G80lhZ_LJCNWokr4HDnbvqJjKPYfkbA/view?usp=sharing', 'https://drive.google.com/file/d/1vu_n4SS4woaFbrle4YrXsqRttqgwjLKb/view?usp=sharing', 'https://drive.google.com/file/d/1yp7gpthbvvAZbif52yI0IT_ap7a2pqr9/view?usp=sharing', 'https://drive.google.com/file/d/1OTu5P8Jgcyw4mR1RTpwI_twz_gklrwlJ/view?usp=sharing', 'https://drive.google.com/file/d/1qsmd6eHg7zPm4k--IUTTEqkoVG6KT_HS/view?usp=sharing', 'https://drive.google.com/file/d/1uOvYOnaze6i3OajRlVHEw2e4hYuVdIXy/view?usp=sharing', 'https://drive.google.com/file/d/1On1xYY3foY82c34W6m20DU3BNwI7bpdK/view?usp=sharing', 'https://drive.google.com/file/d/14E_7VbI73qfaPxJX4NjqaDUbrB0yJQVd/view?usp=sharing', 'https://drive.google.com/file/d/1DUwt55MFHao1kAdHH6YXFRM7oCnFYnby/view?usp=sharing'] },
-      { tag: 'PKL · Sistem Informasi', nama: 'SISLAB', fotos: ['https://drive.google.com/file/d/ID_FOTO_1_SISLAB/view', 'https://drive.google.com/file/d/ID_FOTO_2_SISLAB/view'] }
+      { tag: 'PKL · Technical Support', nama: 'SISLAB', fotos: ['https://drive.google.com/file/d/ID_FOTO_1_SISLAB/view', 'https://drive.google.com/file/d/ID_FOTO_2_SISLAB/view'] }
     ];
 
     function gdrive(url) {
