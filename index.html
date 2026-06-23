@@ -504,6 +504,32 @@
       transform: translateY(14px)
     }
 
+    .role-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1.4rem;
+      opacity: 0;
+      transform: translateY(14px)
+    }
+
+    .role-tag {
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .03em;
+      padding: .35rem .85rem;
+      border: 1px solid var(--line2);
+      border-radius: 20px;
+      color: var(--ink2);
+      background: var(--white)
+    }
+
+    .role-tag.main {
+      background: var(--brown);
+      border-color: var(--brown);
+      color: #fff
+    }
+
     .hero-actions {
       display: flex;
       gap: .75rem;
@@ -1961,9 +1987,16 @@
           <span class="line1">Isma Tiara</span>
           <span class="line2">Zalianti</span>
         </h1>
-        <p class="hero-sub">Aku suka membangun produk digital yang bermanfaat dan nyaman digunakan.
-          Dari kode sampai desain, dari diskusi tim sampai ngobrol sama user —
-          aku percaya produk yang bagus lahir dari empati yang beneran.</p>
+        <div class="role-tags">
+          <span class="role-tag">Admin & Data Entry</span>
+          <span class="role-tag">Technical Support</span>
+          <span class="role-tag">UI/UX Design</span>
+          <span class="role-tag main">Web Developer</span>
+        </div>
+        <p class="hero-sub">Fresh graduate jurusan Rekayasa Perangkat Lunak yang fleksibel dan siap berkontribusi di
+          berbagai bidang — mulai dari administrasi & pengolahan data, technical support, desain (UI/UX & Canva),
+          sampai pengembangan web sesuai jurusan. Aku percaya kerja yang baik itu yang dikerjakan dengan teliti,
+          tanggung jawab, dan komunikasi yang jelas ke semua pihak yang terlibat.</p>
         <div class="hero-actions">
           <a href="#proyek" class="btn btn-fill">Lihat Proyek</a>
           <a href="https://drive.google.com/file/d/1Vr-FU_baPshu8z_VXLkT1__5EuJHAvZq/view?usp=sharing"
@@ -2006,12 +2039,15 @@
 
     <div class="mq-wrap">
       <div class="mq-inner">
-        <s>Frontend Dev</s><s class="g">✦</s><s>JavaScript</s><s class="g">✦</s><s>PHP &amp; Laravel</s><s
-          class="g">✦</s><s>UI/UX Design</s><s class="g">✦</s><s>Komunikasi Tim</s><s class="g">✦</s><s>Figma</s><s
-          class="g">✦</s><s>Open to Work</s><s class="g">✦</s><s>Bandung</s><s class="g">✦</s><s>Frontend Dev</s><s
-          class="g">✦</s><s>JavaScript</s><s class="g">✦</s><s>PHP &amp; Laravel</s><s class="g">✦</s><s>UI/UX
-          Design</s><s class="g">✦</s><s>Komunikasi Tim</s><s class="g">✦</s><s>Figma</s><s class="g">✦</s><s>Open to
-          Work</s><s class="g">✦</s><s>Bandung</s><s class="g">✦</s>
+        <s>Administrasi</s><s class="g">✦</s><s>Data Entry</s><s class="g">✦</s><s>Technical Support</s><s
+          class="g">✦</s><s>UI/UX Design</s><s class="g">✦</s><s>Microsoft Office</s><s class="g">✦</s><s>Komunikasi
+          Tim</s><s class="g">✦</s><s>Frontend Dev</s><s class="g">✦</s><s>Open to Work</s><s
+          class="g">✦</s><s>Bandung</s><s class="g">✦</s><s>Administrasi</s><s class="g">✦</s><s>Data Entry</s><s
+          class="g">✦</s><s>Technical
+          Support</s><s class="g">✦</s><s>UI/UX Design</s><s class="g">✦</s><s>Microsoft Office</s><s
+          class="g">✦</s><s>Komunikasi
+          Tim</s><s class="g">✦</s><s>Frontend Dev</s><s class="g">✦</s><s>Open to Work</s><s
+          class="g">✦</s><s>Bandung</s><s class="g">✦</s>
       </div>
     </div>
 
@@ -2021,14 +2057,16 @@
       <div class="about-grid">
         <div class="about-body">
           <p>Halo! Aku <strong>Isma Tiara Zalianti</strong>, fresh graduate SMK Assalaam Bandung jurusan Rekayasa
-            Perangkat Lunak. Buat aku, teknologi yang beneran bagus itu yang bisa dipakai orang tanpa perlu baca manual
-            dulu.</p>
+            Perangkat Lunak. Selama sekolah dan PKL, aku terbiasa kerja di berbagai peran — dari administrasi dan
+            data, technical support, sampai pengembangan web dan desain — jadi aku cukup fleksibel buat masuk ke
+            bidang kerja yang berbeda-beda.</p>
           <p>Sempat jadi <strong>Ketua Divisi Lingkungan Kesehatan di OSIS</strong>, yang ngajarin aku banyak soal
             koordinasi dan komunikasi. Terus PKL sebagai <strong>Technical Support di PTIPD UIN Sunan Gunung Djati
-              Bandung</strong>, ikut develop aplikasi SISLAB dari nol sampai jalan.</p>
-          <p>Sekarang lagi fokus ningkatin skill di <strong>frontend development</strong> dan <strong>UI/UX
-              design</strong> — pengen bikin antarmuka yang responsif, enak dipandang, dan beneran membantu penggunanya.
-          </p>
+              Bandung</strong>, ngerjain administrasi & data entry mahasiswa, troubleshooting teknis, sekaligus ikut
+            develop aplikasi SISLAB dari nol sampai jalan.</p>
+          <p>Sekarang lagi terus ningkatin skill di <strong>administrasi & pengolahan data</strong>, <strong>technical
+              support</strong>, dan <strong>UI/UX design</strong> — biar bisa kerja rapi, teliti, dan beneran
+            membantu orang lain, di bidang apa pun aku ditempatkan.</p>
         </div>
         <div class="facts">
           <div class="fact">
@@ -2038,18 +2076,19 @@
           <div class="fact map-fact">
             <div class="map-fact-label">
               <div class="fact-lbl">Alamat Saya</div>
-            <div class="fact-val">Kabupaten Bandung, Jawa Barat</div>
-          <div class="map-wrap">
-            <iframe src="https://www.google.com/maps?q=Kabupaten+Bandung,+Jawa+Barat&z=10&output=embed" allowfullscreen=""
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="map-overlay"></div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Kabupaten+Bandung,+Jawa+Barat" target="_blank" rel="noopener"
-              class="map-open">Buka
-              Maps ↗</a>
+              <div class="fact-val">Kabupaten Bandung, Jawa Barat</div>
+            </div>
+            <div class="map-wrap">
+              <iframe src="https://www.google.com/maps?q=Kabupaten+Bandung,+Jawa+Barat&z=10&output=embed"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="map-overlay"></div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Kabupaten+Bandung,+Jawa+Barat" target="_blank"
+                rel="noopener" class="map-open">Buka Maps ↗</a>
+            </div>
           </div>
           <div class="fact">
             <div class="fact-lbl">Minat Utama</div>
-            <div class="fact-val">Frontend Dev &amp; UI/UX Design</div>
+            <div class="fact-val">Administrasi, Technical Support & Desain</div>
           </div>
           <div class="fact">
             <div class="fact-lbl">Kelebihan</div>
@@ -2068,33 +2107,33 @@
       <div class="s-title">Yang bisa aku lakukan</div>
       <div class="skills-wrap">
         <div class="skill-col">
-          <div class="skill-col-title">Pengembangan</div>
+          <div class="skill-col-title">Administrasi & Data</div>
           <ul class="skill-list">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li class="learn">JavaScript</li>
-            <li>PHP</li>
-            <li>Laravel</li>
-            <li>Database MySQL</li>
-            <li>Git &amp; GitHub</li>
-            <li class="learn">Flutter</li>
+            <li>Microsoft Office (Word, Excel)</li>
+            <li>Google Workspace (Docs, Sheets)</li>
+            <li>Data Entry</li>
+            <li>Manajemen Arsip & Dokumen</li>
+            <li>Pengolahan Data Terstruktur</li>
           </ul>
         </div>
         <div class="skill-col">
-          <div class="skill-col-title">Desain</div>
+          <div class="skill-col-title">Teknis & Desain</div>
           <ul class="skill-list">
+            <li>Technical Support</li>
+            <li>Troubleshooting Hardware & Software</li>
+            <li>Analisis Sistem</li>
+            <li>Manajemen Database Dasar (MySQL)</li>
             <li class="learn">UI/UX Design (Figma)</li>
             <li>Canva</li>
-            <li class="learn">Video &amp; Photo Editing</li>
           </ul>
         </div>
         <div class="skill-col">
-          <div class="skill-col-title">Administrasi &amp; Tools</div>
+          <div class="skill-col-title">Pengembangan Web (Jurusan RPL)</div>
           <ul class="skill-list">
-            <li>Microsoft Office</li>
-            <li>Google Workspace</li>
-            <li class="learn">Data Entry &amp; Manajemen Arsip</li>
-            <li class="learn">Technical Support &amp; Troubleshooting</li>
+            <li>HTML5 & CSS3</li>
+            <li class="learn">JavaScript</li>
+            <li>PHP & Laravel</li>
+            <li>Git & GitHub</li>
           </ul>
         </div>
         <div class="skill-col">
@@ -2121,9 +2160,35 @@
       <div class="s-eyebrow">Proyek</div>
       <div class="s-title">Karya aku</div>
       <div class="proj-grid">
-        <div class="proj wide proj-accent" onclick="bukaGaleri(0)">
+        <div class="proj" onclick="bukaGaleri(3)">
           <div class="proj-num">01</div>
-          <div class="proj-tag">Aplikasi Kesehatan · Proyek UKK</div>
+          <div class="proj-tag">PKL · Technical Support & Admin</div>
+          <div class="proj-name">SISLAB</div>
+          <p class="proj-desc">Aplikasi inventaris dan manajemen ruangan untuk UIN Sunan Gunung Djati — dikembangkan
+            bareng tim pas PKL sebagai Technical Support di PTIPD Kampus 1. Aku terlibat di sisi administrasi & data
+            entry, troubleshooting teknis, sekaligus pengembangan sistemnya, dan <strong>berhasil meningkatkan
+              efisiensi pemantauan fasilitas kampus</strong>.</p>
+          <div class="proj-chips"><span class="chip">Technical Support</span><span class="chip">Data Entry</span><span
+              class="chip">PHP</span><span class="chip">SQL</span><span class="chip">Inventaris</span></div>
+          <div class="proj-hint"><svg viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg> Lihat semua foto</div>
+        </div>
+        <div class="proj" onclick="bukaGaleri(1)">
+          <div class="proj-num">02</div>
+          <div class="proj-tag">Desain & Web</div>
+          <div class="proj-name">Company Profile SMKN 4 Bandung</div>
+          <p class="proj-desc">Redesign website company profile sekolah. Fokus ke tampilan modern, responsif, dan
+            struktur informasi yang lebih jelas dan mudah dinavigasi.</p>
+          <div class="proj-chips"><span class="chip">UI/UX</span><span class="chip">HTML</span><span
+              class="chip">CSS</span><span class="chip">Responsive</span></div>
+          <div class="proj-hint"><svg viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg> Lihat semua foto</div>
+        </div>
+        <div class="proj wide proj-accent" onclick="bukaGaleri(0)">
+          <div class="proj-num">03</div>
+          <div class="proj-tag">Proyek Unggulan · UKK Jurusan RPL</div>
           <div class="proj-name">Healtack</div>
           <p class="proj-desc">Aplikasi kesehatan terinspirasi dari Halodoc — ada catatan medis pribadi, pengingat minum
             obat, sampai fitur beli obat online. Dikembangkan sebagai proyek Uji Kompetensi Keahlian (UKK), dan
@@ -2136,39 +2201,14 @@
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg> Lihat semua foto</div>
         </div>
-        <div class="proj" onclick="bukaGaleri(1)">
-          <div class="proj-num">02</div>
-          <div class="proj-tag">Web Design · Frontend</div>
-          <div class="proj-name">Company Profile SMKN 4 Bandung</div>
-          <p class="proj-desc">Redesign website company profile sekolah. Fokus ke tampilan modern, responsif, dan
-            struktur informasi yang lebih jelas dan mudah dinavigasi.</p>
-          <div class="proj-chips"><span class="chip">HTML</span><span class="chip">CSS</span><span
-              class="chip">Responsive</span></div>
-          <div class="proj-hint"><svg viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg> Lihat semua foto</div>
-        </div>
         <div class="proj" onclick="bukaGaleri(2)">
-          <div class="proj-num">03</div>
+          <div class="proj-num">04</div>
           <div class="proj-tag">Produktivitas · Integrasi</div>
           <div class="proj-name">GoTugas</div>
           <p class="proj-desc">Sistem manajemen tugas yang nyatuin Google Drive dan Google Classroom dalam satu platform
             — biar guru nggak perlu bolak-balik platform waktu ngajar.</p>
           <div class="proj-chips"><span class="chip">PHP</span><span class="chip">SQL</span><span class="chip">Google
               API</span><span class="chip">Integrasi</span></div>
-          <div class="proj-hint"><svg viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg> Lihat semua foto</div>
-        </div>
-        <div class="proj" onclick="bukaGaleri(3)">
-          <div class="proj-num">04</div>
-          <div class="proj-tag">PKL · Technical Support</div>
-          <div class="proj-name">SISLAB</div>
-          <p class="proj-desc">Aplikasi inventaris dan manajemen ruangan untuk UIN Sunan Gunung Djati — dikembangkan
-            bareng tim pas PKL sebagai Technical Support di PTIPD Kampus 1, dan <strong>berhasil meningkatkan efisiensi
-              pemantauan fasilitas kampus</strong>.</p>
-          <div class="proj-chips"><span class="chip">PHP</span><span class="chip">SQL</span><span
-              class="chip">Inventaris</span><span class="chip">PKL</span></div>
           <div class="proj-hint"><svg viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg> Lihat semua foto</div>
@@ -2379,8 +2419,8 @@
       <div class="contact-bg"><span>isma.</span></div>
       <div class="s-eyebrow">Kontak</div>
       <div class="s-title">Yuk terhubung</div>
-      <p class="contact-sub">Terbuka buat peluang kerja, magang, kolaborasi, atau sekadar ngobrol soal tech dan desain —
-        apapun itu, jangan ragu hubungi aku!</p>
+      <p class="contact-sub">Terbuka buat peluang kerja di bidang administrasi, technical support, desain, maupun
+        pengembangan web — atau sekadar ngobrol soal kolaborasi. Apapun itu, jangan ragu hubungi aku!</p>
       <div class="contact-links">
         <a href="https://mail.google.com/mail/?view=cm&to=ismatiara51@gmail.com&su=Halo%20Isma" class="c-link prime"
           target="_blank" rel="noopener">✉ Email Aku</a>
@@ -2410,7 +2450,7 @@
           LinkedIn
         </a>
         <a href="https://github.com/Ismatyarara" class="c-link" target="_blank">GitHub</a>
-        <a href="https://drive.google.com/file/d/1Vr-FU_baPshu8z_VXLkT1__5EuJHAvZq/view?usp=sharing" class="c-link"
+        <a href="https://drive.google.com/file/d/12gt5AFKh3_IZvkn50IxA1MO3iF0IolIe/view?usp=sharing" class="c-link"
           target="_blank">Lihat CV</a>
       </div>
     </section>
@@ -2453,6 +2493,7 @@
         const els = [
           document.querySelector('.hero-eyebrow'),
           document.querySelector('.hero h1'),
+          document.querySelector('.role-tags'),
           document.querySelector('.hero-sub'),
           document.querySelector('.hero-actions'),
           document.querySelector('.hero-right')
